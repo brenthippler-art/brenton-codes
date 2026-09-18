@@ -38,6 +38,14 @@ export const projects: Project[] = [
     url: "https://thedadwork.com",
   },
   {
+    kind: "Paid Internship",
+    title: "Skinstric AI",
+    description: 
+      "A pixel-accurate rebuild of the Skinstric AI skincare platform from a Figma design file and written technical spec — built across three phases: user intake, photo-based demographic analysis, and live selfie capture.",
+    stack: "Next.js · TypeScript · Tailwind CSS · GSAP",
+    url: "https://skinstric-sooty-nine.vercel.app/"
+  },
+  {
     kind: "Personal Business Site",
     title: "Hear After Entertainment",
     description:
@@ -59,14 +67,14 @@ export const projects: Project[] = [
     description:
       "A tool that lets voters enter an address and find their local, state, and federal races.",
     stack: "React · Geolocation",
-    url: "https://papaya-sunflower-c14e40.netlify.app/",
+    url: "https://warrencountyvote.com",
   },
   {
     kind: "Personal Web App",
     title: "Meal Recipe Planner",
     description:
       "API data fetch, auto-generated shopping lists, and macro sorting.",
-    stack: "React · Firebase · Local Storage · Drag API",
+    stack: "JavaScript · HTML5 · CSS3 · Spoonacular API",
     url: "https://brenthippler-art.github.io/Recipe-Search/",
   },
   {
@@ -90,7 +98,7 @@ export const projects: Project[] = [
     title: "Gemini Clone",
     description:
       "A fully functional AI chat interface powered by the Gemini API. Multi-conversation management, persistent chat history, image input, and markdown rendering — a ground-up rebuild of a production AI product that required wiring real streaming responses into a responsive React UI.",
-    stack: "React · Vite · JS · Gemini APIv3",
+    stack: "React · Vite · JS · Gemini API",
     url: "https://github.com/brenthippler-art/Gemini-Clone",
   },
 ];
@@ -100,7 +108,7 @@ export const bioFacts: BioFact[] = [
   { k: "Focus", v: "Next.js, TypeScript, accessibility" },
   { k: "Also runs", v: "Hippler Family Farm" },
   { k: "Education", v: "BA, Campbellsville University" },
-  { k: "", v: "Certificate, Frontend Simplified" },
+  { k: "Certifiaction", v: "Frontend Simplified" },
   { k: "Also", v: "Proud father of four beautiful children" },
 ];
 

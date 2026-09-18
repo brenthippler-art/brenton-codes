@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: "https://brentoncodes.dev",
     title: "Brenton J Hippler - Frontend Developer",
     description:
-      "Frontend Developer in Bowling Green, Kentucky. React and Firebase applications. Open to freelance work and remote roles.",
+      "Frontend Developer in Bowling Green, Kentucky. Next.js and TypeScript applications. Open to freelance work and remote roles.",
   },
   twitter: {
     card: "summary_large_image",
