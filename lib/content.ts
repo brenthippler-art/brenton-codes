@@ -1,0 +1,128 @@
+export interface Fact {
+  num: string;
+  label: string;
+}
+
+export interface Project {
+  kind: string;
+  title: string;
+  description: string;
+  stack: string;
+  url: string; // empty string = non-clickable card
+}
+
+export interface BioFact {
+  k: string;
+  v: string;
+}
+
+export interface StackGroup {
+  category: string;
+  items: string[];
+}
+
+export const facts: Fact[] = [
+  { num: "Next.js", label: "TypeScript & Firebase, daily" },
+  { num: "WCAG", label: "accessibility-first" },
+  { num: "KY & TN", label: "local freelance clients" },
+  { num: "Available for", label: "Remote developer positions, freelance work" },
+];
+
+export const projects: Project[] = [
+  {
+    kind: "Live Proprietary Product",
+    title: "The Dad Work",
+    description:
+      "A progressive web app for new and expecting fathers — built end to end, from data model to checkout.",
+    stack: "React · Vite · Firebase · Stripe · FCM push notifications · Firestore token architecture",
+    url: "https://thedadwork.com",
+  },
+  {
+    kind: "Personal Business Site",
+    title: "Hear After Entertainment",
+    description:
+      "A full marketing site for Hear After Entertainment, an event services company. Built a component-driven landing page with an autoplaying full-screen intro video, animated waveform branding, a rotating image gallery, and a tiered pricing system. Integrated EmailJS for direct-to-inbox contact form submissions without a backend.",
+    stack: "React, Vite, EmailJS, CSS Grid/Flexbox",
+    url: "https://hearafterent.com",
+  },
+  {
+    kind: "Freelance",
+    title: "Young Spirit Kennel",
+    description:
+      "Site build for a local Doberman and Rottweiler breeder — built to make finding and reserving a puppy simple.",
+    stack: "React · React Router · Image carousel · Responsive design",
+    url: "https://youngspiritkennel.com",
+  },
+  {
+    kind: "Civic tool",
+    title: "Voter District Lookup",
+    description:
+      "A tool that lets voters enter an address and find their local, state, and federal races.",
+    stack: "React · Geolocation",
+    url: "https://papaya-sunflower-c14e40.netlify.app/",
+  },
+  {
+    kind: "Personal Web App",
+    title: "Meal Recipe Planner",
+    description:
+      "API data fetch, auto-generated shopping lists, and macro sorting.",
+    stack: "React · Firebase · Local Storage · Drag API",
+    url: "https://brenthippler-art.github.io/Recipe-Search/",
+  },
+  {
+    kind: "Coding Challenge",
+    title: "Netflix Clone",
+    description:
+      "Full-featured streaming UI pulling live data from the TMDB API. Search, genre filtering, trailer playback, and a personal watchlist.",
+    stack: "React · Vite ·Firebase ·TMDB API",
+    url: "https://brenthippler-art.github.io/Netflix-Clone/login",
+  },
+  {
+    kind: "Coding Challenge",
+    title: "Library E-store",
+    description:
+      "A React-based e-commerce storefront for books, featuring a landing page, browsable/sortable catalog, individual book detail pages, and a fully functional shopping cart with quantity management and live tax/subtotal calculation.",
+    stack: "React · React Router · React Helmet · Font Awesome Icons",
+    url: "https://library-react-project-seven-ebon.vercel.app/",
+  },
+  {
+    kind: "Coding Challenge",
+    title: "Gemini Clone",
+    description:
+      "A fully functional AI chat interface powered by the Gemini API. Multi-conversation management, persistent chat history, image input, and markdown rendering — a ground-up rebuild of a production AI product that required wiring real streaming responses into a responsive React UI.",
+    stack: "React · Vite · JS · Gemini APIv3",
+    url: "https://github.com/brenthippler-art/Gemini-Clone",
+  },
+];
+
+export const bioFacts: BioFact[] = [
+  { k: "Based in", v: "Bowling Green, KY" },
+  { k: "Focus", v: "Next.js, TypeScript, accessibility" },
+  { k: "Also runs", v: "Hippler Family Farm" },
+  { k: "Education", v: "BA, Campbellsville University" },
+  { k: "", v: "Certificate, Frontend Simplified" },
+  { k: "Also", v: "Proud father of four beautiful children" },
+];
+
+export const stack: StackGroup[] = [
+  {
+    category: "Frontend",
+    items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+  },
+  {
+    category: "Backend & Data",
+    items: ["Firebase", "MongoDB", "REST APIs"],
+  },
+  {
+    category: "State & Payments",
+    items: ["Redux Toolkit", "Stripe"],
+  },
+  {
+    category: "Deployment & Infrastructure",
+    items: ["Vercel", "Netlify", "Cloudflare"],
+  },
+  {
+    category: "Tools & AI-Assisted Development",
+    items: ["Git", "GitHub", "GitHub Copilot", "Claude Code"],
+  },
+];
