@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const EMAIL = "hello@brentoncodes.dev";
+const EMAIL = "brenton@brentoncodes.dev";
 
 export default function NotFound() {
   const [copied, setCopied] = useState(false);

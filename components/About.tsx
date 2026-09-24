@@ -1,4 +1,5 @@
-import { bioFacts, stack } from "@/lib/content";
+import Image from "next/image";
+import { bioFacts, stack, portrait } from "@/lib/content";
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
       <div className="grid grid-cols-1 gap-14 md:grid-cols-2">
         <div>
           <p className="mb-4 max-w-[52ch] text-base text-ink-soft">
-             I&apos;m a frontend developer based in Bowling Green, Kentucky,
+            I&apos;m a frontend developer based in Bowling Green, Kentucky,
             focused on building software that&apos;s fast, accessible, and
             reliable. Most of my work is in Next.js and TypeScript, backed by
             Firebase or MongoDB depending on what the project needs.
@@ -40,26 +41,36 @@ export default function About() {
         </dl>
       </div>
 
-      <div className="mt-16">
-        <h3 className="font-display mb-8 text-xl font-semibold">Tech stack</h3>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {stack.map((group) => (
-            <div key={group.category}>
-              <p className="mb-3 text-[13px] font-semibold text-indigo">
-                {group.category}
-              </p>
-              <ul className="flex flex-wrap gap-2">
-                {group.items.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-[3px] border border-line bg-panel px-2.5 py-1 text-[13px] text-ink-soft"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+      <div className="mt-16 grid grid-cols-1 gap-14 md:grid-cols-2">
+        <div>
+          <h3 className="font-display mb-8 text-xl font-semibold">
+            Tech stack
+          </h3>
+          <dl className="flex flex-col gap-3.5">
+            {stack.map((group) => (
+              <div
+                key={group.category}
+                className="flex gap-4 border-b border-line pb-3.5 text-[15px] last:border-b-0 last:pb-0"
+              >
+                <dt className="w-[110px] shrink-0 text-ink-soft">
+                  {group.category}
+                </dt>
+                <dd className="m-0 font-medium">{group.items.join(", ")}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        <div>
+          <div className="relative aspect-[4/5] max-w-sm overflow-hidden rounded-md border border-line bg-panel md:aspect-auto md:h-full md:max-w-none">
+            <Image
+              src={portrait.src}
+              alt={portrait.alt}
+              fill
+              sizes="(min-width: 1040px) 460px, (min-width: 768px) 50vw, 100vw"
+              className="object-cover object-[center_30%]"
+            />
+          </div>
         </div>
       </div>
     </section>

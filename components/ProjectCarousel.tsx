@@ -47,7 +47,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="min-w-0 shrink-0 grow-0 basis-full pl-4 sm:basis-1/2 lg:basis-1/3"
+              className="min-w-0 shrink-0 grow-0 basis-full pl-4 md:basis-1/2"
             >
               <WorkCard project={project} />
             </div>
